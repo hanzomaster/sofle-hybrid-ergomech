@@ -52,11 +52,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC          &kp GRAVE  &kp N2  &kp N3     &kp N4        &kp N5                                &kp N6             &kp N7    &kp N8     &kp N9   &kp N0     &kp BACKSLASH
-&kp TAB          &kp Q      &kp W   &kp E      &kp R         &kp T                                 &kp Y              &kp U     &kp I      &kp O    &kp P      &kp BACKSPACE
-&skq LEFT_SHIFT  &kp A      &kp S   &kp D      &kp F         &kp G                                 &kp H              &kp J     &kp K      &kp L    &kp SEMI   &kp APOSTROPHE
-&kp LCTRL        &kp Z      &kp X   &kp C      &kp V         &kp B         &mo 1        &mo 2      &kp N              &kp M     &kp COMMA  &kp DOT  &kp SLASH  &trans
-                            &none   &kp LCTRL  &skq LEFT_ALT  &kp LEFT_GUI  &kp ENTER    &kp SPACE  &kp RIGHT_CONTROL  &kp RALT  &kp RGUI   &none
+&kp GRAVE        &kp N1  &kp N2  &kp N3      &kp N4         &kp N5                                    &kp N6          &kp N7    &kp N8     &kp N9   &kp N0     &kp BACKSLASH
+&kp ESCAPE       &kp Q   &kp W   &kp E       &kp R          &kp T                                     &kp Y           &kp U     &kp I      &kp O    &kp P      &kp BACKSPACE
+&skq TAB         &kp A   &kp S   &kp D       &kp F          &kp G                                     &kp H           &kp J     &kp K      &kp L    &kp SEMI   &kp APOSTROPHE
+&skq LEFT_SHIFT  &kp Z   &kp X   &kp C       &kp V          &kp B         &skq LCTRL     &skq RCTRL   &kp N           &kp M     &kp COMMA  &kp DOT  &kp SLASH  &trans
+                         &trans  &skq LCTRL  &skq LEFT_ALT  &kp LEFT_GUI  &lt 1 ENTER    &lt 2 SPACE  &skq RIGHT_ALT  &kp HOME  &kp END    &trans
             >;
 
             sensor-bindings =
@@ -79,7 +79,7 @@
 &trans     &kp F1     &kp F2     &kp F3       &kp F4    &kp F5                       &kp F6            &kp F7             &kp F8           &kp F9     &kp F10        &kp F11
 &kp GRAVE  &kp N1     &kp N2     &kp N3       &kp N4    &kp N5                       &kp N6            &kp N7             &kp N8           &kp N9     &kp N0         &kp F12
 &trans     &kp EXCL   &kp AT     &kp HASH     &kp DLLR  &kp PRCNT                    &kp CARET         &kp AMPS           &kp KP_MULTIPLY  &kp LPAR   &kp RPAR       &kp PIPE
-&trans     &kp EQUAL  &kp MINUS  &kp KP_PLUS  &kp LBRC  &kp RBRC   &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMI         &kp COLON  &kp BACKSLASH  &trans
+&trans     &kp EQUAL  &kp MINUS  &kp KP_PLUS  &kp LBRC  &kp RBRC   &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMI         &kp COLON  &kp BACKSLASH  &kp RCTRL
                       &trans     &trans       &trans    &trans     &trans    &trans  &trans            &trans             &trans           &trans
             >;
 
