@@ -55,7 +55,7 @@
 &kp GRAVE        &kp N1  &kp N2  &kp N3      &kp N4         &kp N5                                    &kp N6          &kp N7    &kp N8     &kp N9   &kp N0     &kp BACKSLASH
 &kp ESCAPE       &kp Q   &kp W   &kp E       &kp R          &kp T                                     &kp Y           &kp U     &kp I      &kp O    &kp P      &kp BACKSPACE
 &kp TAB          &kp A   &kp S   &kp D       &kp F          &kp G                                     &kp H           &kp J     &kp K      &kp L    &kp SEMI   &kp APOSTROPHE
-&skq LEFT_SHIFT  &kp Z   &kp X   &kp C       &kp V          &kp B         &kp LCTRL      &skq RCTRL   &kp N           &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
+&skq LEFT_SHIFT  &kp Z   &kp X   &kp C       &kp V          &kp B         &kp LCTRL      &skq RCTRL   &kp N           &kp M     &kp COMMA  &kp DOT  &kp SLASH  &to 4
                          &trans  &skq LCTRL  &skq LEFT_ALT  &kp LEFT_GUI  &lt 1 ENTER    &lt 2 SPACE  &skq RIGHT_ALT  &kp HOME  &kp END    &trans
             >;
 
@@ -123,6 +123,18 @@
 &none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none  &none  &none  &none  &kp A
             >;
+        };
+
+        game_layer {
+            bindings = <
+&kp GRAVE  &kp N1  &kp N2  &kp N3        &kp N4  &kp N5                          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&kp ESC    &kp Q   &kp W   &kp E         &kp R   &kp T                           &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &kp A   &kp S   &kp D         &kp F   &kp G                           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp Z   &kp X   &kp C         &kp V   &kp B      &to 0        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                   &trans  &kp LEFT_GUI  &kp H   &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
